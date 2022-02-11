@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/stylez.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=9"> <!--check https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-<body>
-    <p><b>Test.</b></p>
-    <br>
-    <h1>Another test.</h1>
-    <br>
-    <h2>And another test.</h2>
-    <br>
-    <h3>And another test.</h3>
-    <br>
-    <h4>Another one is being tested.</h4>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/stylez.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=9"> <!--check https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="wrapper">                              <!--wrapper staat voor de hele site-->
+            <header>
+                <div class="logo">                         <!--dit is het logo linksbovenaan-->
+                    <img src="img/logo.svg">
+                </div>
+
+                <nav class="main-menu">                    <!--dit is het keuzemenu bovenaan in het midden-->
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#">Recipes</a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="#">Videos</a>
+                        </li>
+                        
+                        <li class="menu-item">
+                            <a href="#">Journal</a>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="socials">                      <!--dit zijn de social media linkjes rechts van het keuzemenu-->
+                    <ul>
+                        <li class="platform">
+                            <a href="#">Facebook</a>
+                        </li>
+
+                        <li class="platform">
+                            <a href="#">Instagram</a>
+                        </li>
+
+                        <li class="platform">
+                            <a href="#">Pinterest</a>
+                        </li>
+
+                        <li class="platform">
+                            <a href="#">YouTube</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            
+            <main>
+                <div class="repts_lib">                     <!--dit gaat over het recept zelf op de pagina-->
+                    <div class="rept">
+                        <div class="rept_desc">
+                            <h2 class="rept_title">Title</h2>
+                            <h4 class="item_date">February 11th 2022</h4>
+                            <p class="rept_text">The usual Latin stuff.</p>
+                            <button class="text_elab">read more</button>
+                        </div>
+
+
+                        <div class="rept_img">
+                            <img class="rept_img" src="img/aspergers.png">
+                        </div>
+                    </div>
+
+
+                    <div class="other_items">               <!--menu aan de linkerkant die meer recepten laat zien-->
+                        <div class="item">
+                            <p class="item_title">soup with sun-dried tomatos and chives</p>
+                            <a class="item_link" href="#">Click further</a>
+                            <img class="item_img" src="img/item-1.png">
+                            
+                            <p class="item_title">fancy spaghett</p>
+                            <a class="item_link" href="#">Click further</a>
+                            <img class="item_img" src="img/item-2.png">
+                           
+                            <p class="item_title">jar of homemade pesto</p>
+                            <a class="item_link" href="#">Click further</a>
+                            <img class="item_img" src="img/item-3.png">
+                           
+                            <p class="item_title">asparagus wrapped in pig</p>
+                            <a class="item_link" href="#">Click further</a>
+                            <img class="item_img" src="img/item-4.png">
+                           
+                            <p class="item_title">french onion soup?</p>
+                            <a class="item_link" href="#">Click further</a>
+                            <img class="item_img" src="img/item-5.png">                           
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
