@@ -1,103 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/stylez.css">
         <meta http-equiv="X-UA-Compatible" content="IE=9"> <!--check https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index</title>
+        <script src="js/funct.js" defer></script>
+        <script src="https://kit.fontawesome.com/d06c4e13ac.js" crossorigin="anonymous"></script>
+        <title>Index</title>                               <!--misschien interessant voor offline gebruik, https://stackoverflow.com/questions/49550011/font-awesome-icons-in-offline-->
+
     </head>
+
+
     <body>
-        <div class="wrapper">                              <!--wrapper staat voor de hele site-->
+
+        <div class="wrapper">                              <!--wrapper staat voor de hele site inhoud-->
+
             <header>
+
                 <div class="logo">                         <!--dit is het logo linksbovenaan-->
-                    <img src="img/logo.svg">
+                    <a href="index.html">
+
+                        <img src="img/logo.svg">           <!--kijk hier naar als je het niet meer snapt: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
+
+                    </a>
+
                 </div>
+                
+                
+                <nav>                                      <!--dit is het keuzemenu bovenaan in het midden-->
 
-                <nav class="main-menu">                    <!--dit is het keuzemenu bovenaan in het midden-->
-                    <ul>
-                        <li class="menu-item">
-                            <a href="#">Recipes</a>
-                        </li>
+                    <ul class="main-menu">
 
                         <li class="menu-item">
-                            <a href="#">Videos</a>
+                            <a href="recipes.html">Recipes</a>
                         </li>
                         
                         <li class="menu-item">
-                            <a href="#">Journal</a>
+                            <a href="videos.html">Videos</a>
                         </li>
-
+                        
                         <li class="menu-item">
-                            <a href="#">About</a>
+                            <a href="myjournal.html">Journal</a>
                         </li>
+                        
+                        <li class="menu-item">
+                            <a href="about.html">About</a>
+                        </li>
+
                     </ul>
+
                 </nav>
 
-                <nav class="socials">                      <!--dit zijn de social media linkjes rechts van het keuzemenu-->
-                    <ul>
+
+                <nav>                                      <!--dit zijn de social media linkjes rechts van het keuzemenu-->
+                    <ul class="socials">
+
                         <li class="platform">
-                            <a href="#">Facebook</a>
+                            <a href="http://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
                         </li>
 
                         <li class="platform">
-                            <a href="#">Instagram</a>
+                            <a href="http://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         </li>
 
                         <li class="platform">
-                            <a href="#">Pinterest</a>
+                            <a href="http://www.pinterest.com/" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
                         </li>
 
                         <li class="platform">
-                            <a href="#">YouTube</a>
-                        </li>
+                            <a href="http://www.youtube.com/" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </li>                               <!--title geeft een tool tip, je weet wel, dat ding met tekst dat zweeft over een item-->
+
                     </ul>
+
                 </nav>
+
             </header>
 
             
             <main>
                 <div class="repts_lib">                     <!--dit gaat over het recept zelf op de pagina-->
+
                     <div class="rept">
+
                         <div class="rept_desc">
-                            <h2 class="rept_title">Title</h2>
-                            <h4 class="item_date">February 11th 2022</h4>
-                            <p class="rept_text">The usual Latin stuff.</p>
-                            <button class="text_elab">read more</button>
+                                                            <!--(over item_date) godverdomme, heb ik er zo lang over gedaan? ik haat mezelf-->
+                            <h2 class="rept_title">Asparagus: certainly not the same as Aspergers</h2>
+                            <h4 class="item_date" title="Posted at 18:39">February 11th 2022</h4>
+                            <p class="rept_text">The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. The usual Latin stuff. <abbr title="A pseudo pattern emerges because this block of text has a set size so that it doesn't overflow into the other elements on this page. Due to this, the sentences keep shifting a spot on each line until it comes back normal.">And so a pattern emerges.</p>
+                            <button class="rept_elab">read more</button>
+
                         </div>
 
 
                         <div class="rept_img">
+
                             <img class="rept_img" src="img/aspergers.png">
+
                         </div>
+
                     </div>
 
 
-                    <div class="other_items">               <!--menu aan de linkerkant die meer recepten laat zien-->
+                    <div class="other_items">              <!--menu aan de linkerkant die meer recepten laat zien-->
+
                         <div class="item">
-                            <p class="item_title">soup with sun-dried tomatos and chives</p>
-                            <a class="item_link" href="#">Click further</a>
+
+                            <div class="item_text">
+                                
+                                <h3 class="item_title">soup with sun-dried tomatoes and chives</h3>
+                                <a class="item_link" href="img/item-1.png">Click further</a>
+
+                            </div>
                             <img class="item_img" src="img/item-1.png">
-                            
-                            <p class="item_title">fancy spaghett</p>
-                            <a class="item_link" href="#">Click further</a>
-                            <img class="item_img" src="img/item-2.png">
-                           
-                            <p class="item_title">jar of homemade pesto</p>
-                            <a class="item_link" href="#">Click further</a>
-                            <img class="item_img" src="img/item-3.png">
-                           
-                            <p class="item_title">asparagus wrapped in pig</p>
-                            <a class="item_link" href="#">Click further</a>
-                            <img class="item_img" src="img/item-4.png">
-                           
-                            <p class="item_title">french onion soup?</p>
-                            <a class="item_link" href="#">Click further</a>
-                            <img class="item_img" src="img/item-5.png">                           
+
                         </div>
+
+
+                        <div class="item">
+
+                            <div class="item_text">
+
+                                <h3 class="item_title">fancy spaghett</h3>
+                                <a class="item_link" href="img/item-2.png">Click further</a>
+
+                            </div>
+                            <img class="item_img" src="img/item-2.png">
+                            
+                        </div>
+
+
+                        <div class="item">
+                            
+                            <div class="item_text">
+
+                                <h3 class="item_title">jar of homemade pesto</h3>
+                                <a class="item_link" href="img/item-3.png">Click further</a>
+
+                            </div>
+                            <img class="item_img" src="img/item-3.png">
+                                                        
+                        </div>
+                        
+
+                        <div class="item">
+
+                            <div class="item_text">
+
+                                <h3 class="item_title">asparagus wrapped in pig</h3>
+                                <a class="item_link" href="img/item-4.png">Click further</a>
+
+                            </div>
+                            <img class="item_img" src="img/item-4.png">
+                                                        
+                        </div>
+                        
+                        
+                        <div class="item">
+
+                            <div class="item_text">
+
+                                <h3 class="item_title">french onion soup?</h3>
+                                <a class="item_link" href="img/item-5.png">Click further</a>
+
+                            </div>
+                            <img class="item_img" src="img/item-5.png">
+                            
+                        </div>
+
                     </div>
+
                 </div>
+
             </main>
+
         </div>
+
     </body>
+
 </html>
